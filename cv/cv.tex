@@ -9,7 +9,7 @@
 \usepackage[left=0.8in,top=0.4in,right=0.8in,bottom=0.4in]{geometry} % Document margins
 
 \name{Manasvi Saxena} % Your name
-\address{(571)~$\cdot$~442~$\cdot$~1509 \\ msaxena2@illinois.edu} % Your phone number and email
+\address{(571)~$\cdot$~442~$\cdot$~1509 \\ msaxena2@illinois.edu \\ github.com/msaxena2} % Your phone number and email
 \usepackage{hologo}
 
 \begin{document}
@@ -19,9 +19,11 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
+\begin{rSubsection}{ M.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2018}{}{}
+\item Relevant Coursework - Formal Methods of Software Development, Runtime Verification, Logic in Computer Science, Cryptocurrency Security 
+\end{rSubsection}
 \begin{rSubsection}{ B.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2015}{}{}
-\item Thesis - Semantics Based Debugging in the K Framework. \\
-	\em{Advisor} - Prof. Grigore Ro{\c s}u
+\item Relevant Coursework - Programming Languages and Compilers, Fundamental Algorithms, Theory of Computation, Computer Networking, Artificial Intelligence
 \end{rSubsection}
 \end{rSection}
 
@@ -29,13 +31,22 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
 
-\begin{rSection}{Research and Experience}
-
-\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2014 - May 2015}{Undergraduate Researcher}{Urbana, IL}
-\item Developing a semantics debugger for the K Semantics Framework.
+\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - Current}{Researcher Assistant}{Urbana, IL}
+\item Developing a dynamic Matching Logic Proof Assistant for the K Semantics Framework.
 \item K (github.com/kframework) is a rewrite based semantics framework in which programming
 languages can be defined using configurations, computations and rules.
+\item Proof Assistant will be used to prove program correctness, using the implementation of Matching Logic in K.
+\end{rSubsection}
+
+\begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Software Engineer}{Urbana, IL}
+\item Core member of team developing a dynamic analysis tool for finding undefined behavior in C programs, using formal semantics of C.
+\item Worked on improving tool's performance, and evaluated it's applications on large codebases.
+\end{rSubsection}
+
+\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2014 - May 2015}{Undergraduate Researcher}{Urbana, IL}
+\item Developed a semantics debugger for the K Semantics Framework.
 \item Debugger helps users find bugs in formal semantics defined in K. Allows users to step
 through the execution of their program, examine the state space, configurations, and rules
 among other features.
@@ -60,32 +71,27 @@ Java programming and programming concepts such as recursion, sorting.
 
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{Fareshare}{}{}{}
-\item A web application that helps users carpool and share the cost of travel. Co-founder and part of the back-end team. Implemented the user-authentication and ticketing systems in PHP.
+\begin{rSubsection}{Formal Verification of Ethereum Smart Contracts}{github.com/kframework/evm-modeling}{}{}
+\item Part of a team working on implementing the semantics of the Ethereum Virtual Machine in K.
+\item Lead the effort of using the semantics for formally verifying smart contracts on the EVM blockchain.
+
+\end{rSubSection}
+
+\begin{rSubsection}{K Semantics Framework}{github.com/kframework/k}{}{}
+\item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine. 
 \end{rSubsection}
 
-%------------------------------------------------
-
-\begin{rSubsection}{StartHub}{}{}{}
-\item A web application that aims at building a community encouraging collaboration between startups, research groups and students at the University of Illinois. Implemented the application in python/Django.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{PyGraphLib}{}{github.com/msaxena2/pygraphlib}{}
-\item Implemented a lightweight python library for creating directed/undirected and weighted/unweighted graphs. The library enables the user to perform operations, such as shortest path search, on the graphs.
-\end{rSubsection}
 
 \end{rSection}
+%------------------------------------------------
+
+
+%------------------------------------------------
+
 %----------------------------------------------------------------------------------------
 %	CERTIFICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Certifications}
-
-Oracle Certified Professional Java SE 6 Programmer
-
-\end{rSection}
 
 
 
