@@ -5,15 +5,18 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-
+\nonstopmode
 \usepackage[left=0.8in,top=0.4in,right=0.8in,bottom=0.4in]{geometry} % Document margins
 
 \name{Manasvi Saxena} % Your name
 \address{(571)~$\cdot$~442~$\cdot$~1509 \\ msaxena2@illinois.edu \\ github.com/msaxena2} % Your phone number and email
+
 \usepackage{hologo}
+\usepackage{bibentry}
 
 \begin{document}
-
+ \nobibliography{cv}
+ \bibliographystyle{unsrt}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -34,10 +37,9 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - Current}{Researcher Assistant}{Urbana, IL}
-\item Developing a dynamic Matching Logic Proof Assistant for the K Semantics Framework.
+\item Implementing a Proof Assistant for the K Semantics Framework.
 \item K (github.com/kframework) is a rewrite based semantics framework in which programming
-languages can be defined using configurations, computations and rules.
-\item Proof Assistant will be used to prove program correctness, using the implementation of Matching Logic in K.
+languages can be defined using configurations, computations and rules. Proof Assistant will be used to prove program correctness, using the implementation of Matching Logic in K.
 \end{rSubsection}
 
 \begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Software Engineer}{Urbana, IL}
@@ -46,7 +48,7 @@ languages can be defined using configurations, computations and rules.
 \end{rSubsection}
 
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2014 - May 2015}{Undergraduate Researcher}{Urbana, IL}
-\item Developed a semantics debugger for the K Semantics Framework.
+\item Developed a Semantics based Debugger for the K Semantics Framework.
 \item Debugger helps users find bugs in formal semantics defined in K. Allows users to step
 through the execution of their program, examine the state space, configurations, and rules
 among other features.
@@ -61,21 +63,16 @@ among other features.
 
 %------------------------------------------------
 
-\begin{rSubsection}{CS 125, University of Illinois}{Fall, 2012}{Course Assistant for CS 125 (Intro to Computer Science) under Prof. Lawrence Angrave}{Urbana, IL}
-\item Conducted weekly office hours during which helped students with general doubts regarding
-Java programming and programming concepts such as recursion, sorting.
-\end{rSubsection}
-
 \end{rSection}
 %------------------------------------------------
 
 \begin{rSection}{Projects}
 
 \begin{rSubsection}{Formal Verification of Ethereum Smart Contracts}{github.com/kframework/evm-modeling}{}{}
-\item Part of a team working on implementing the semantics of the Ethereum Virtual Machine in K.
-\item Lead the effort of using the semantics for formally verifying smart contracts on the EVM blockchain.
+\item Part of team working on formalizing the semantics of the Ethereum ecosystem in K.
+\item Lead the effort of using the formal semantics for verifying correctness of Smart Contracts on the EVM blockchain.
 
-\end{rSubSection}
+\end{rSubsection}
 
 \begin{rSubsection}{K Semantics Framework}{github.com/kframework/k}{}{}
 \item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine. 
@@ -83,17 +80,10 @@ Java programming and programming concepts such as recursion, sorting.
 
 
 \end{rSection}
-%------------------------------------------------
 
-
-%------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	CERTIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-
-
+\begin{rSection}{Publications}
+    \item \bibentry{guth-hathhorn-saxena-rosu-2016-cav}
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
@@ -102,8 +92,7 @@ Java programming and programming concepts such as recursion, sorting.
 \begin{rSection}{Technical Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Java, Python, C, C++, OCaml, PHP \\
-Web Development & SQL, Django, HTML \\
+Programming Languages & Java, Scala, Python, C, C++, OCaml \\
 Miscellaneous & Git, Intellij IDEA, Eclipse, PyCharm,  \hologo{LaTeX} \\
 \end{tabular}
 
