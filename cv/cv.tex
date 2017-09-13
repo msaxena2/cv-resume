@@ -12,17 +12,17 @@
 \usepackage{bibentry}
 
 \begin{document}
- \nobibliography{cv}
- \bibliographystyle{unsrt}
+    \nobibliography{cv}
+    \bibliographystyle{unsrt}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
-\begin{rSubsection}{ M.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2018}{}{}
-\item Relevant Coursework - Formal Methods of Software Development, Logic in Computer Science, Computer and Cyrptocurrency Security, Runtime Verification
+    \begin{rSubsection}{ M.S. (Thesis Program) Computer Science, University of Illinois -- Urbana Champaign}{May 2018}{}{}
+    \item \textbf{Coursework} - Formal Methods of Software Development, Logic in Computer Science, Computer and Cyrptocurrency Security, Runtime Verification
 \end{rSubsection}
 \begin{rSubsection}{ B.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2015}{}{}
-\item Relevant Coursework - Programming Languages and Compilers, Fundamental Algorithms, Computer Networking
+    \item \textbf{Coursework} - Programming Languages and Compilers, Fundamental Algorithms, Computer Networking
 \end{rSubsection}
 \end{rSection}
 
@@ -33,43 +33,37 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - Current}{Researcher Assistant}{Urbana, IL}
-\item Implementing a Proof Assistant/Proof Debugger for the K Semantics Framework. K (github.com/kframework/k) is a rewrite based
-    semantics framework in which programming languages can be defined using configurations, computations and rules.
-    Proof Assistant will be used to prove program correctness using programming language's semantics.
+    \item Implementing a Debugger for the K Semantics Framework. K is a rewrite based
+        semantics framework in which programming languages can be defined using configurations, computations and rules.
+    \item The K Debugger is language independent - it's derived from the programming language's semantis in K.
+        The K Debuger will be used to prove program correctness using the language's K semantics.
 \end{rSubsection}
-
 \begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Software Engineer}{Urbana, IL}
-\item Worked on a team developing a dynamic analysis tool for finding undefined behavior in C programs, using formal semantics of C.
-\item Worked on improving tool's performance, and evaluated its applications on large codebases.
+    \item Part of team developing a dynamic analysis tool for finding undefined behavior in C programs, using C's formal semantics.
+    \item Worked on improving tool's performance, and evaluated its applications on large codebases.
 \end{rSubsection}
-
-\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2014 - May 2015}{Undergraduate Researcher}{Urbana, IL}
-\item Developed a Semantics based Debugger for the K Semantics Framework.
-\item Debugger helps users find bugs in formal semantics defined in K. Allows users to step
-through the execution of their program, examine the state space, configurations, and rules
-among other features.
-\end{rSubsection}
-
 \begin{rSubsection}{Coordinated Science Lab, University of Illinois}{Summer 2014}{Undergraduate Researcher}{Urbana, IL}
-\item Worked on visualization of a large dataset containing records of faulty medical devices by the Food and Drug Administration (FDA).
-\item Created an interactive web application that displays the visualizations using PHP/Javascript.
+    \item Worked on visualization of a large dataset containing records of faulty medical devices by the Food and Drug Administration (FDA).
+    \item Created an interactive web application that displays the visualizations using PHP/Javascript.
 \end{rSubsection}
-
-
-%------------------------------------------------
-
+\begin{rSubsection}{Undergraduate Course Assistant, CS 125}{Fall 2012}{University of Illinois}{Urbana, IL}
+    \item Held office hours during which helped students with programs encountered in programming assignments.
+    \item Helped students understand concepts encountered in the course, such as recursion to students.
+\end{rSubsection}
 \end{rSection}
+%------------------------------------------------
+%   PROJECTS
 %------------------------------------------------
 \begin{rSection}{Projects}
 
 \begin{rSubsection}{KEVM - EVM Semantics in K}{github.com/kframework/evm-semantics}{}{}
-\item Part of team working on formalizing the semantics of the Ethereum ecosystem in K. The executable semantics
-    is one of the most complete formalizations of the Ethereum ecosystem. The
-    semantics have been used to analyze real smart contracts on the Ethereum Blockchain.
+    \item Part of team working on formalizing the semantics of the Ethereum ecosystem in K. Our executable semantics
+        is one of the most complete formalizations of the Ethereum ecosystem.
+    \item Semantics have been used to analyze real smart contracts on the Ethereum Blockchain.
 \end{rSubsection}
 
 \begin{rSubsection}{K Semantics Framework}{github.com/kframework/k}{}{}
-\item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine.
+    \item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine.
 \end{rSubsection}
 
 
@@ -83,10 +77,10 @@ among other features.
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Technical Skills}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Java, Scala, Python, C, C++, OCaml \\
-Miscellaneous & Git, Intellij IDEA, Eclipse, PyCharm, K, Z3, \hologo{LaTeX} \\
-\end{tabular}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Programming Languages & Java, Scala, Python, C, OCaml, Dafny \\
+    Miscellaneous & Git,  K, Z3, \hologo{LaTeX}, Intellij IDEA \\
+    \end{tabular}
 \end{rSection}
 
 \end{document}
