@@ -7,9 +7,9 @@
 \documentclass{resume} % Use the custom resume.cls style
 \nonstopmode
 \usepackage[left=0.8in,top=0.4in,right=0.8in,bottom=0.4in]{geometry} % Document margins
-
 \name{Manasvi Saxena} % Your name
-\address{(571)~$\cdot$~442~$\cdot$~1509 \\ msaxena2@illinois.edu \\ github.com/msaxena2} % Your phone number and email
+\address{msaxena2@illinois.edu \\ 209 W Griggs St. \#204, Urbana, IL 61801 \\ (571)~$\cdot$~442~$\cdot$~1509 }
+\address{ \url{www.github.com/msaxena2} \\ \url{fsl.cs.illinois.edu/index.php/Manasvi\_Saxena}}
 
 \usepackage{hologo}
 \usepackage{bibentry}
@@ -21,12 +21,11 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
  \begin{rSection}{Research Interests}
-  Programming Language Semantics, Static and Dynamic Analysis, Language Independent Formal Verification and Debugging,
-  Development of Mathematically Rigorous tools with Practical Applications
+  Programming Language Semantics, Static and Dynamic Analysis, Language Independent Formal Verification and Debugging, Security, Blockchains
  \end{rSection}
 \begin{rSection}{Education}
 \begin{rSubsection}{ M.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2018}{}{}
-\item Relevant Coursework - Formal Methods of Software Development, Runtime Verification, Logic in Computer Science, Cryptocurrency Security 
+\item Relevant Coursework - Formal Methods of Software Development, Runtime Verification, Logic in Computer Science, Computer and Cryptocurrency Security
 \item GPA - 3.86/4.0
 \end{rSubsection}
 \begin{rSubsection}{ B.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2015}{}{}
@@ -42,9 +41,12 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - Current}{Researcher Assistant}{Urbana, IL}
-\item Implementing a Proof Assistant for the K Semantics Framework.
-\item K (github.com/kframework/k) is a rewrite based semantics framework in which programming
+\item Implementing a Proof Assistant (called the K Debugger) for the K Semantics Framework.
+\item K (\url{https://github.com/kframework/k}) is a rewrite based semantics framework in which programming
 languages can be defined using configurations, computations and rules. Proof Assistant will be used to prove program correctness, using the implementation of Matching Logic in K.
+\item Implementing the semantics of the ethereum Abstract Binary Interface (ABI) as a part of the KEVM \\
+  (\url{http://github.com/kframework/evm-semantics}) project. The KEVM ABI abstraction
+  exposes a higher-level language like layer for smart contract verification.
 \end{rSubsection}
 
 \begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Software Engineer}{Urbana, IL}
@@ -74,27 +76,28 @@ among other features.
 
 \begin{rSubsection}{Undergraduate Course Assistant, CS 125}{Fall 2012}{University of Illinois}{Urbana, IL}
 \item Held office hours during which helped students with programs encountered in programming assignments.
-\item Helped students understand concepts encountered in the course, such as recursion to students. 
+\item Helped students understand concepts encountered in the course, such as recursion to students.
 \end{rSubsection}
 \end{rSection}
 \pagebreak
 
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{EVM Semantics in K}{github.com/kframework/evm-modeling}{}{}
-\item Part of team working on formalizing the semantics of the Ethereum ecosystem in K.
-\item Lead the effort of using the formal semantics for verifying correctness of Smart Contracts on the EVM blockchain.
-
+\begin{rSubsection}{KEVM - Semantics of the EVM in K}{github.com/kframework/evm-semantics}{}{}
+\item Worked on formalizing the EVM in K. Currently working on capturing the semantics of the Ethereum ABI, as
+  an extension to the original semantics. One of the administrators of the project.
 \end{rSubsection}
 
 \begin{rSubsection}{K Semantics Framework}{github.com/kframework/k}{}{}
-\item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine. 
+\item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine.
 \end{rSubsection}
 
 
 \end{rSection}
-\begin{rSection}{Relevant Publications}
+\begin{rSection}{Publications}
+    \item \bibentry{kevm}
     \item \bibentry{guth-hathhorn-saxena-rosu-2016-cav}
+    \item \bibentry{rv-tutorial}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
