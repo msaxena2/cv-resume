@@ -1,15 +1,12 @@
-
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-\nonstopmode
+%\nonstopm
 \usepackage[left=0.8in,top=0.4in,right=0.8in,bottom=0.4in]{geometry} % Document margins
 \name{Manasvi Saxena} % Your name
-\address{msaxena2@illinois.edu \\ 209 W Griggs St. \#204, Urbana, IL 61801 \\ (571)~$\cdot$~442~$\cdot$~1509 }
-\address{ \url{www.github.com/msaxena2} \\ \url{fsl.cs.illinois.edu/index.php/Manasvi\_Saxena}}
+\address{msaxena2@illinois.edu \\ (571)~$\cdot$~442~$\cdot$~1509 \\ \url{www.github.com/msaxena2} }
 
 \usepackage{hologo}
 \usepackage{bibentry}
@@ -20,17 +17,19 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
- \begin{rSection}{Research Interests}
-  Programming Language Semantics, Static and Dynamic Analysis, Language Independent Formal Verification and Debugging, Security, Blockchains
- \end{rSection}
+\begin{rSection}{Research Interests}
+\item Programming Language Semantics, Runtime Verification, Safe Hybrid Systems, Language Independent Static and Dynamic Analysis
+\end{rSection}
+
 \begin{rSection}{Education}
-\begin{rSubsection}{ M.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2018}{}{}
-\item Relevant Coursework - Formal Methods of Software Development, Runtime Verification, Logic in Computer Science, Computer and Cryptocurrency Security
-\item GPA - 3.86/4.0
+\begin{rSubsection}{Ph.D. Computer Science, University of Illinois -- Urbana Champaign}{Dec 2023}{}{}
+\item Relevant Coursework - Advanced Programming Language Semantics, Programming Verification, Embedded Systems Verification
 \end{rSubsection}
-\begin{rSubsection}{ B.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2015}{}{}
+\begin{rSubsection}{M.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2018}{}{}
+\item Relevant Coursework - Formal Methods of Software Development, Runtime Verification, Logic in Computer Science, Computer and Cryptocurrency Security
+\end{rSubsection}
+\begin{rSubsection}{B.S. Computer Science, University of Illinois -- Urbana Champaign}{May 2015}{}{}
 \item Relevant Coursework - Programming Languages and Compilers, Fundamental Algorithms, Theory of Computation, Computer Networking, Artificial Intelligence
-\item GPA - 3.38/4.0
 \end{rSubsection}
 \end{rSection}
 
@@ -40,7 +39,34 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - Current}{Researcher Assistant}{Urbana, IL}
+\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{May 2018 - Present}{Research Assistant}{Urbana, IL}
+\item Leading the design and development of the MediK Framework (\url{https://github.com/medik-framework}).
+  The core of MediK is a new domain
+  specific language for expressing guidelines in medicine formally as finite
+  state machines. MediK is a part of a multi year effort to safely capture
+  semantics of medical guidelines formally to derive correct-by-construction
+  decision support systems for use in healthcare.
+\item Lead developer of RV-Monitor, a language independent monitoring
+  that supports rich formalisms for expressing properties.
+\end{rSubsection}
+
+\begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services}{Summer 2021}{Applied Scientist Intern}{}
+\item Developed a tool for measuring effectiveness of a test suite against a property expressed in
+  RV-Monitor (\url{https://github.com/runtimeverification/rv-monitor}).
+\item Tool reported code coverage w.r.t. regions of the code important for an
+  RV-Monitor safety specification, helping ensure test suite exercises important
+  regions of the codebase, and was optimized to handle millions of lines of highly
+  concurrent code.
+\end{rSubsection}
+
+\begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services (AWS)}{Summer 2020}{Applied Scientist Intern}{}
+\item Developed tooling to ensure S3 codebase adhered to desired safety properites such as serializability.
+\item Improved RV-Monitor, an academic tool, to handle millions of lines of
+  code, and support expressing complex properties relevant to concurrent systems
+    such as read after write consistency and serializability efficiently.
+\end{rSubsection}
+
+\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - May 2018}{Researcher Assistant}{Urbana, IL}
 \item Implementing a Proof Assistant (called the K Debugger) for the K Semantics Framework.
 \item K (\url{https://github.com/kframework/k}) is a rewrite based semantics framework in which programming
 languages can be defined using configurations, computations and rules. Proof Assistant will be used to prove program correctness, using the implementation of Matching Logic in K.
@@ -66,36 +92,43 @@ among other features.
 \item Created an interactive web application that displays the visualizations using PHP/Javascript.
 \end{rSubsection}
 
-
-%------------------------------------------------
-
 \end{rSection}
 %------------------------------------------------
 
 \begin{rSection}{Teaching Experience}
 
-\begin{rSubsection}{Undergraduate Course Assistant, CS 125}{Fall 2012}{University of Illinois}{Urbana, IL}
-\item Held office hours during which helped students with programs encountered in programming assignments.
-\item Helped students understand concepts encountered in the course, such as recursion to students.
+\begin{rSubsection}{Teaching Assistant, CS 427}{Fall 2020}{University of Illinois}{Urbana, IL}
+\item Helped prepare course materials, and assisted instructor during lectures
+  when needed.
+\item Held weekly office hours
 \end{rSubsection}
 \end{rSection}
-\pagebreak
+
+%\pagebreak
 
 \begin{rSection}{Projects}
 
+\begin{rSubsection}{The MediK Framework}{github.com/medik-framework}{}{}
+\item Lead development of the semantics of the MediK language for expressing
+  computer interpretable medical guidelines.
+\end{rSubsection}
+
+\begin{rSubsection}{RV-Monitor}{github.com/runtimeverification/rv-monitor}{}{}
+\item Part of core team that maintains and develops RV-Monitor - a language
+  agnostic monitor framework.
+\end{rSubsection}
+
 \begin{rSubsection}{KEVM - Semantics of the EVM in K}{github.com/kframework/evm-semantics}{}{}
-\item Worked on formalizing the EVM in K. Currently working on capturing the semantics of the Ethereum ABI, as
-  an extension to the original semantics. One of the administrators of the project.
+\item Worked on formalizing the EVM in K. Worked on capturing the semantics of the Ethereum ABI, as
+  an extension to the original semantics.
 \end{rSubsection}
-
-\begin{rSubsection}{K Semantics Framework}{github.com/kframework/k}{}{}
-\item Core developer. In charge of developing debugging capabilities, and maintaining the rewrite engine.
-\end{rSubsection}
-
 
 \end{rSection}
+
 \begin{rSection}{Publications}
+    \item \bibentry{kevm-tool}
     \item \bibentry{kevm}
+    \item \bibentry{ha-tr}
     \item \bibentry{guth-hathhorn-saxena-rosu-2016-cav}
     \item \bibentry{rv-tutorial}
 \end{rSection}
@@ -104,13 +137,13 @@ among other features.
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Java, Scala, Python, C, C++, OCaml \\
-Miscellaneous & Git, Intellij IDEA, Eclipse, PyCharm,  \hologo{LaTeX} \\
-\end{tabular}
-
-\end{rSection}
+%\begin{rSection}{Technical Skills}
+%
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%Programming Languages & Java, Scala, Python, C, C++, OCaml \\
+%Miscellaneous & Git, Intellij IDEA, Eclipse, PyCharm,  \hologo{LaTeX} \\
+%\end{tabular}
+%
+%\end{rSection}
 
 \end{document}
