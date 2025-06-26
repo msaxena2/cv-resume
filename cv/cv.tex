@@ -20,7 +20,8 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Research Interests}
-\item Programming Language Semantics, Runtime Verification, Safe Hybirid Systems, Language Independent Static and Dynamic Analysis
+\item Formal Semantics, Static and Dynamic Analysis, Program Verification, Runtime
+ Monitoring
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -43,59 +44,44 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{May 2018 - Present}{Research Assistant}{Urbana, IL}
-\item Leading the design and development of the MediK Framework (\url{https://github.com/medik-framework}).
-  The core of MediK is a new domain
-  specific language for expressing guidelines in medicine formally as finite
-  state machines. MediK is a part of a multi year effort to safely capture
-  semantics of medical guidelines formally to derive correct-by-construction
-  decision support systems for use in healthcare.
-\item Lead developer of RV-Monitor, a language independent monitoring
-  that supports rich formalisms for expressing properties.
+\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{May 2016 - December 2024}{Research Assistant}{Urbana, IL}
+\item Developed the MediK Framework, a DSL for encoding medical guidelines using
+  state machines with strong correctness guarantees (\url{https://github.com/medik-framework}).
+\item Maintained RV-Monitor, a language independent monitoring
+  framework that supports rich formalisms for expressing properties.
+\item Contributed to KEVM, formalizing the semantics of the Ethereum Virtual
+  Machine (EVM) in the K Framework (\url{http://github.com/kframework/evm-semantics}).
 \end{rSubsection}
 
-  \begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services (AWS)}{Summer 2021}{Applied Scientist Intern}{}
-\item Developed a tool for measuring effectiveness of a test suite against a property expressed in
-  RV-Monitor (\url{https://github.com/runtimeverification/rv-monitor}).
-\item Tool reported code coverage w.r.t. regions of the code important for an
-  RV-Monitor safety specification, helping ensure test suite exercises important
-  regions of the codebase, and was optimized to handle millions of lines of highly
-  concurrent code.
+\begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services
+  (AWS)}{Summer 2021 \& 2021}{Applied Scientist Intern}{}
+\item Developed techniques and tooling for evaluating compliance of highly concurrent, distributed code
+  against relevant properties expressed as RV-Monitor specifications
+  (\url{https://github.com/runtimeverification/rv-monitor}) utilizing the existing test suite.
+\item Optimized RV-Monitor, an academic tool, to handle millions of lines of
+  code, and enabled support for expressing properties relevant to concurrent systems,
+    such as read after write consistency and serializability efficiently,
+    enabling RV-Monitor to handle the scale of massively parallel
+    and highly distributed systems like S3.
+
 \end{rSubsection}
 
-\begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services (AWS)}{Summer 2020}{Applied Scientist Intern}{}
-\item Developed tooling to ensure S3 codebase adhered to desired safety properites such as serializability.
-\item Improved RV-Monitor, an academic tool, to handle millions of lines of
-  code, and support expressing complex properties relevant to concurrent systems
-    such as read after write consistency and serializability efficiently.
-\end{rSubsection}
-
-\begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August 2016 - May 2018}{Research Assistant}{Urbana, IL}
-\item Implementing a Proof Assistant (called the K Debugger) for the K Semantics Framework.
-\item K (\url{https://github.com/kframework/k}) is a rewrite based semantics framework in which programming
-languages can be defined using configurations, computations and rules. Proof Assistant will be used to prove program correctness, using the implementation of Matching Logic in K.
-\item Implementing the semantics of the ethereum Abstract Binary Interface (ABI) as a part of the KEVM \\
-  (\url{http://github.com/kframework/evm-semantics}) project. The KEVM ABI abstraction
-  exposes a higher-level language like layer for smart contract verification.
-\end{rSubsection}
-
-\begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Software Engineer}{Urbana, IL}
+\begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Formal Verification Engineer}{Urbana, IL}
 \item Worked on a team developing a dynamic analysis tool for finding undefined behavior in C programs, using formal semantics of C.
 \item Worked on improving tool's performance, and evaluated its applications on large codebases.
 \end{rSubsection}
 
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{August
   2014 - May 2015}{Undergraduate Research Assistant}{Urbana, IL}
-\item Developed a Semantics based Debugger for the K Semantics Framework.
-\item Debugger helps users find bugs in formal semantics defined in K. Allows users to step
-through the execution of their program, examine the state space, configurations, and rules
-among other features.
+\item Developed a Semantics-based language-independent Debugger for the K
+  Semantics Framework that allows users to efficiently step through program
+  executions, examine the state space, configuration and rules, among other
+  features.
 \end{rSubsection}
 
 \begin{rSubsection}{Coordinated Science Lab, University of Illinois}{Summer
   2014}{Undergraduate Research Assistant}{Urbana, IL}
-\item Worked on visualization of a large dataset containing records of faulty medical devices by the Food and Drug Administration (FDA).
-\item Created an interactive web application that displays the visualizations using PHP/Javascript.
+\item Worked on visualization of a large dataset containing records of faulty medical devices by the Food and Drug Administration (FDA)
 \end{rSubsection}
 
 \end{rSection}
@@ -104,8 +90,7 @@ among other features.
 \begin{rSection}{Teaching Experience}
 
 \begin{rSubsection}{Teaching Assistant, CS 427}{Fall 2020}{University of Illinois}{Urbana, IL}
-\item Helped prepare course materials, and assisted instructor during lectures
-  when needed.
+\item Helped prepare course materials, and assisted instructor during lectures when needed.
 \item Held weekly office hours
 \end{rSubsection}
 \end{rSection}
@@ -115,7 +100,7 @@ among other features.
 \begin{rSection}{Projects}
 
 \begin{rSubsection}{The MediK Framework}{github.com/medik-framework}{}{}
-\item Lead development of the semantics of the MediK language for expressing
+\item Lead the design and development of the semantics of the MediK language for expressing
   computer interpretable medical guidelines.
 \end{rSubsection}
 
@@ -132,6 +117,7 @@ among other features.
 \end{rSection}
 
 \begin{rSection}{Publications}
+    \item \bibentry{saxenaThesis2024}
     \item \bibentry{medik-fmcad}
     \item \bibentry{architecture-smc}
     \item \bibentry{kevm-csf}
