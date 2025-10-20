@@ -22,11 +22,11 @@
 
 %% Add "AI-enabled/intelligent"
 \begin{rSection}{Summary}
-  Research scientist and entrepreneur with a PhD in Computer Science and extensive
-experience in developing real-world software systems with formal-methods-based
-correctness guarantees. Proven track record of transitioning academic research
-into production-scale systems, including direct experience with Amazon's S3
-Automated Reasoning Group.
+Research scientist and entrepreneur with a PhD in Computer Science and extensive
+experience developing AI-enabled software systems with formal-methods-based
+correctness guarantees. Demonstrated success in translating academic research
+into production-scale applications, including hands-on experience with Amazon's
+S3 Automated Reasoning Group.
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -48,39 +48,26 @@ Automated Reasoning Group.
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Experience}
-%% Add some text about "RAGs/LLMs/OPENAI". Consider adding AWS+bedrock.
-%% Use keywords such as GenAI, classic ML.
-%% Containerized devops.
-%% HIPAA, PII, PHI
-%% Add another bullet point that encompasses all the keywords
-\begin{rSubsection}{Satyax Inc., Urbana, Illinois}{January 2025 - Present}{Founder \& CEO}{Urbana, IL}
+\begin{rSubsection}{Satyax Inc., Urbana, Illinois}{January 2025 -- Present}{Founder \& CEO}{Urbana, IL}
 \item Building a platform for trustworthy advanced clinical decision support that
 integrates intelligence with formal-methods-based mathematical safety guarantees.
-Our software assists with acute conditions such as sepsis, representing the first
+The software assists with acute conditions such as sepsis, representing the first
 formally verified comprehensive clinical decision support system with mathematical
-proofs of desired correctness properties.
+proofs of correctness.
 \item Translating doctoral research on a formal-semantics-driven approach to encoding medical knowledge in a
   computable yet clinician-comprehensible form, enabling the development of
   intelligent yet safe clinical decision support systems that
   foster greater clinician confidence through transparency, addressing concerns of safety and opaqueness associated with black-box approaches.
-\item Driving early-stage product development, customer discovery, and grant strategy to lay the foundation for commercialization.
+\item Leveraging classical machine learning (ML), large language models (LLMs), and retrieval-augmented generation (RAG) to enhance contextual relevance, accuracy, and trust while ensuring compliance with HIPAA and best practices for managing Personally Identifiable Information (PII) and Protected Health Information (PHI).
+\item Utilizes containerized (Docker/Kubernetes) and cloud-native architecture integrated with the OpenAI SDK, enabling secure and scalable interoperability with EHR systems.
 \end{rSubsection}
 
-%% Add another bullet point that encompasses all the keywords
-\begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services
-  (AWS)}{Summer 2021 \& 2020}{Applied Scientist Intern}{}
-\item Developed techniques and tooling for evaluating compliance of highly concurrent, distributed code
-  against relevant properties expressed as RV-Monitor specifications
-  (\url{https://github.com/runtimeverification/rv-monitor}) utilizing the existing test suite.
-\item Optimized RV-Monitor, an academic tool, to handle millions of lines of
-  code, and enabled support for expressing properties relevant to concurrent systems,
-    such as read after write consistency and serializability efficiently,
-    enabling RV-Monitor to handle the scale of massively parallel
-    and highly distributed systems like S3.
-
+\begin{rSubsection}{S3 Automated Reasoning Group, Amazon Web Services (AWS)}{Summer 2021 \& 2020}{Applied Scientist Intern}{}
+\item Developed techniques and tooling to evaluate the compliance of highly concurrent, distributed code against properties expressed as RV-Monitor specifications (\url{https://github.com/runtimeverification/rv-monitor}) using the existing test suite.
+\item Optimized RV-Monitor, an academic runtime verification tool, to handle millions of lines of code and efficiently express properties relevant to concurrent systems, such as read-after-write consistency and serializability, enabling analysis at the scale of massively parallel and distributed systems like S3.
+\item Built DevOps workflows to verify conformance of S3 codebase with RV-Monitor specifications and prevent complex, cross-cutting bugs from reaching production.
 \end{rSubsection}
 
-%% Add section about devops here.
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{May 2016 - December 2024}{Research Assistant}{Urbana, IL}
 \item Developed the MediK Framework, a DSL for encoding medical guidelines using
   state machines with strong correctness guarantees (\url{https://github.com/medik-framework}).
@@ -89,7 +76,7 @@ proofs of desired correctness properties.
 \item Contributed to KEVM, formalizing the semantics of the Ethereum Virtual
   Machine (EVM) in the K Framework (\url{http://github.com/runtimeverification/evm-semantics}).
 \end{rSubsection}
-\newpage
+%\newpage
 \begin{rSubsection}{Runtime Verification Inc., Urbana, Illinois}{July 2015 - May 2016}{Formal Verification Engineer}{Urbana, IL}
 \item Worked on a team developing a dynamic analysis tool for finding undefined behavior in C programs, using formal semantics of C.
 \item Worked on improving tool's performance, and evaluated its applications on large codebases.
@@ -113,14 +100,11 @@ proofs of desired correctness properties.
 
 \begin{rSection}{Projects}
 
-%% Add GenAI, RAGs. Keep Two bullets, one for AI/GenAI and another for DevOps
-\begin{rSubsection}{The MediK Framework - Trustworthy Intelligent Decision Support}{}{}{}
-\item \textit{Domain-Specific Language} for encoding medical guidelines as verifiable
-  state machines.
-\item \textit{Safety guarantees} through mathematical proofs while maintaining clinical
-  interpretability.
-\item \textit{Comprehensive approach} combines formal reasoning with clinician-validated
-  clinical knowledge.
+\begin{rSubsection}{The MediK Framework -- Trustworthy Intelligent Decision Support}{}{}{}
+\item \textit{Domain-Specific Language} for encoding medical guidelines as verifiable state machines.
+\item \textit{AI-enabled:} Uses classical ML and GenAI to improve accuracy and contextual relevance of rendered support using accumulated patient data.
+\item \textit{Safety guarantees:} Provides mathematical proofs of correctness while maintaining clinical interpretability; uses RAG to constrain outputs within peer-reviewed guidelines to ensure safety.
+\item \textit{Comprehensive DevOps:} Containerized Docker-based setup atop EKS and SageMaker-managed AI models.
 \item \textit{Repository:} \url{https://github.com/medik-framework}
 \end{rSubsection}
 
@@ -131,12 +115,12 @@ proofs of desired correctness properties.
 \item \textit{Repository:} \url{https://github.com/runtimeverification/rv-monitor}
 \end{rSubsection}
 
-  \begin{rSubsection}{KEVM - Semantics of the EVM in K}{}{}{}
+\begin{rSubsection}{KEVM - Semantics of the EVM in K}{}{}{}
 \item \textit{Formalization} of the Ethereum Virtual Machine (EVM) in the K
-  Framework. Contributed to the semantics of the Ethereum ABI, as
-  an extension to the original semantics.
+Framework. Contributed to the semantics of the Ethereum ABI, as
+an extension to the original semantics.
 \item \textit{Enables formal analysis} of smart contracts with high degree of
-  automation.
+automation.
 \item \textit{Repository:} \url{https://github.com/runtimeverification/evm-semantics}
 \end{rSubsection}
 
@@ -153,9 +137,10 @@ proofs of desired correctness properties.
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Automated Reasoning: & Formal Semantics, Static and Dynamic Analysis, Runtime
  Monitoring \\
-Safety-critical Software: & Trustworthy AI-enabled Systems, Clinician-validated Decision
-  Support \\
+Safety-critical Software: & Trustworthy AI-enabled Systems, Clinician-validated Decision Support \\
+AI Frameworks: & OpenAI SDK, AWS Bedrock, SageMaker \\
   Programming: & Java, Haskell, K Framework, Scala, Python, C \\
+  DevOps: & Docker, AWS, EKS \\
 \end{tabular}
 \end{rSection}
 
