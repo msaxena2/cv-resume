@@ -24,8 +24,6 @@
   PhD in Computer Science (UIUC, 2024) focused on formal methods, runtime
 verification, and semantics-based reasoning. Direct experience with Amazon's S3
 Automated Reasoning Group across two summers as Applied Scientist intern.
-Passionate about teaching, with classroom experience in software engineering and
-programming languages.
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -52,7 +50,21 @@ programming languages.
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Satyax Inc., Urbana, Illinois}{January 2025 - Present}{Founder \& CEO}{Urbana, IL}
+\begin{rSubsection}{Tarnyq, Bengaluru, India}{February 2026 - Present}{Co-Founder}{Bengaluru, India}
+\item Co-founded a venture (\url{https://tarnyq.net}) focused on software for
+  safety-critical settings, using formal-methods, semantics-first techniques.
+\item Extending thesis work on MediK, a domain-specific language for expressing
+  medical guidelines with formal executable semantics, toward intelligent,
+  trustworthy decision support with formally verified correctness properties.
+  Developing conformance monitoring solutions to safely integrate AI by ensuring
+  AI-generated advice remains guideline-compliant.
+\item Building software for safety-critical settings that is secure by
+  construction rather than retrofitted: end-to-end encryption with keys held
+  on-device, distributed replication for resilient backup and offline use, and
+  verifiable-integrity techniques inspired by blockchain systems.
+\end{rSubsection}
+
+\begin{rSubsection}{Satyax Inc., Urbana, Illinois}{January 2025 - February 2026}{Founder \& CEO}{Urbana, IL}
 \item Scaling doctoral research on formally verified clinical decision support
   from research prototype to production, applied initially to acute conditions
   such as sepsis with formal-methods-backed correctness properties.
@@ -68,16 +80,17 @@ programming languages.
   (\url{https://github.com/runtimeverification/rv-monitor}) utilizing the existing test suite.
 \item Optimized RV-Monitor, an academic tool, to handle millions of lines of
   code, and enabled support for expressing properties relevant to concurrent systems,
-    such as read after write consistency and serializability efficiently,
+    such as read-after-write consistency and serializability efficiently,
     enabling RV-Monitor to handle the scale of massively parallel
     and highly distributed systems like S3.
 
 \end{rSubsection}
 
+\newpage
 \begin{rSubsection}{Formal Systems Laboratory, University of Illinois}{May 2016 - December 2024}{Research Assistant}{Urbana, IL}
 \item Developed the MediK Framework, a DSL for encoding medical guidelines using
   state machines with strong correctness guarantees (\url{https://github.com/medik-framework}).
-\item Maintained RV-Monitor, a language independent monitoring
+\item Maintained RV-Monitor, a language-independent monitoring
   framework that supports rich formalisms for expressing properties.
 \item Contributed to KEVM, formalizing the semantics of the Ethereum Virtual
   Machine (EVM) in the K Framework (\url{http://github.com/runtimeverification/evm-semantics}).
@@ -103,23 +116,13 @@ programming languages.
 \end{rSection}
 %------------------------------------------------
 
-\begin{rSection}{Teaching Experience}
-\begin{rSubsection}{Software Engineering (CS 427), University of Illinois}{Fall 2020}{Teaching Assistant}{Urbana, IL}
-\item Designed and graded assignments and helped prepare course materials for a
-  project-based course on software engineering best practices: test-driven
-  development, version control, pair programming, and coverage metrics.
-\item Led office hours and guided students through breaking problems into manageable
-  units, expressing functionality as tests, then writing code to satisfy them.
-\end{rSubsection}
-\end{rSection}
-%------------------------------------------------
-
 \begin{rSection}{Projects}
 
 \begin{rSubsection}{The MediK Framework - Trustworthy Intelligent Decision Support}{}{}{}
-\item \textit{Domain-Specific Language} for encoding medical guidelines as verifiable
-  state machines.
-\item \textit{Safety guarantees} through mathematical proofs while maintaining clinical
+\item \textit{Domain-specific language} for encoding medical guidelines as verifiable
+  state machines with formal K-Framework semantics.
+\item \textit{Safety guarantees} established through formal analysis with
+  semantics-derived, correct-by-construction tools, while maintaining clinical
   interpretability.
 \item \textit{Comprehensive approach} combines formal reasoning with clinician-validated
   clinical knowledge.
@@ -150,8 +153,8 @@ programming languages.
 \begin{rSection}{Core Competencies}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Automated Reasoning: & Formal Semantics, Symbolic Execution, Deductive Verification, \\
-		     & Runtime Monitoring \\
+Automated Reasoning: & Formal Semantics, Symbolic Execution, SMT Solvers, \\
+		     & Model Checking, Deductive Verification, Runtime Monitoring \\
   Programming: & Java, Haskell, K Framework, Scala, Python, C \\
 \end{tabular}
 \end{rSection}
